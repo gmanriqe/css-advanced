@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page CSS Avanzado",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "landing"
+  ],
+  "author": "gmanriqe",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,32 @@
+/** Header **/
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-primary-light, .8),
+        rgba($color-primary-dark, .8)),
+        url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    // properties clip-path: (x y, x y, x y, x y) ya que queremos 4 puntos
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    position: relative;
+    &__logo-box {
+        position: absolute;
+        top: 4rem; //40px
+        left: 4rem; //40px;
+    }
+    &__logo {
+        height: 3.5rem; //35px;
+    }
+    &__text-box {
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

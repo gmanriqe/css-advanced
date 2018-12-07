@@ -1,0 +1,40 @@
+/**********************
+Section About
+**********************/
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    /* 
+    * truco para ocupar el triangulo 
+    * del header que dejo el polygon
+    * es por el resultado de 95vh - 
+    * 75vh (alto del header - alto derecho del polygon)
+    */
+    margin-top: -20vh;
+}
+
+/**********************
+Section Features
+**********************/
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-primary-light, .8),
+        rgba($color-primary-dark, .8)),
+        url("../img/hero.jpg");
+    transform: skewY(-7deg); // aquí el truco
+    margin-top: -10rem; // se calculo por prueba y error
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+/**********************
+Section Tours
+**********************/
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -10rem;
+}

@@ -1,0 +1,41 @@
+/********************
+Reset CSS
+********************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Convert PX to REM **/
+/* si ponemos el 100% aquí, esto significaría que el tamaño de la fuente 
+* de la raíz sería de 16  
+* píxeles Si el usuario no cambia nada, 
+* y si el usuario cambia el tamaño de fuente predeterminado, 
+* digamos a 18 píxeles, entonces el tamaño de la fuente raíz será de 18 píxeles. 
+* Si cambia a 20 pixel,*entonces serán 20, y así sucesivamente.
+* Ahora, pero no queremos 16 píxeles aquí, ¿verdad? Lo que 
+* queremos es de 10 píxeles, Y por eso es muy simple. 
+* Todo lo que tenemos que hacer es dividir lo que *queremos, que es 10, por 16. 
+* Así que tengo una calculadora aquí, entonces 10 dividido por 16 es 
+* 62.5%, Y eso es lo que estamos poniendo aquí. 62.5% 
+*/
+
+html {
+    font-size: 62.5%; //10px;
+}
+
+/********************
+Stylesheet 
+********************/
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    // font-size: 16px;
+    line-height: 1.7; //?
+    color: $color-grey-dark;
+
+    padding: 3rem; //30px
+}
