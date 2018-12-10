@@ -11,6 +11,7 @@
     background-size: cover;
 
     // properties clip-path: (x y, x y, x y, x y) ya que queremos 4 puntos
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     position: relative;
